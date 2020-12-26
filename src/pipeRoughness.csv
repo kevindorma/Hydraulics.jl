@@ -1,0 +1,15 @@
+﻿Material,roughnessMM
+Drawn tubing,0.0015
+Plastic,0.0015
+Fiberglass,0.005
+Stainless steel,0.015
+Commercial steel,0.068
+Galvanized steel,0.15
+Rusted steel,2.075
+Riveted steel,4.95
+New cast iron,0.53
+Worn cast iron,1.2
+Corroding cast iron,2
+Galvanized iron,0.015
+Smoothed cement,0.3
+Ordinary concrete,1.7
