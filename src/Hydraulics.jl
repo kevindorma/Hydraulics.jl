@@ -85,25 +85,25 @@ function checkLineList(lines,fluidList)
         thisItem = lines[i,:NPS]
         match = npsList[npsList.NPS .== thisItem,:]
         if ((size(match)[1]) == 0)
-            push!(errorList, ("NPS not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:SCHED], lines[i,:Material], lines[i,:fluidName] ))
+            push!(errorList, ("NPS not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:Schedule], lines[i,:Material], lines[i,:fluidName] ))
         end
         # schedule
         thisItem = lines[i,:Schedule]
         match = schedList[schedList.Schedule .== thisItem,:]
         if ((size(match)[1]) == 0)
-            push!(errorList, ("SCHED not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:SCHED], lines[i,:Material], lines[i,:fluidName] ))
+            push!(errorList, ("Schedule not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:Schedule], lines[i,:Material], lines[i,:fluidName] ))
         end
         # roughness material
         thisItem = lines[i,:Material]
         match = pipeRoughness[pipeRoughness.Material .== thisItem,:]
         if ((size(match)[1]) == 0)
-            push!(errorList, ("Material not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:SCHED], lines[i,:Material], lines[i,:fluidName] ))
+            push!(errorList, ("Material not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:Schedule], lines[i,:Material], lines[i,:fluidName] ))
         end
         # fluid
         thisItem = lines[i,:fluidName]
         match = fluidList[fluidList.fluidName .== thisItem,:]
         if ((size(match)[1]) == 0)
-            push!(errorList, ("FluidName not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:SCHED], lines[i,:Material], lines[i,:fluidName] ))
+            push!(errorList, ("FluidName not found in row", i, lines[i,:Segment], lines[i,:NPS], lines[i,:Schedule], lines[i,:Material], lines[i,:fluidName] ))
         end
     end
     return (errorList)
