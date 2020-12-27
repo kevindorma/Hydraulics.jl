@@ -1,4 +1,4 @@
-pipeID = DataFrame(NPS = [0.125,
+IDmm = DataFrame(NPS = [0.125,
 	0.25,
 	0.375,
 	0.5,
