@@ -34,11 +34,7 @@ The package requires the following packages
 ### Testing
 
 The following code tests are available
-* what tests do I need?
-* pressure drop in a pipe.
-* pressure drop in a fitting
-* line sizing
-
+* friction factor for a pipe
 
 <!-- USAGE EXAMPLES -->
 ## Usage
