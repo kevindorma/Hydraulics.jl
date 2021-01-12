@@ -79,7 +79,7 @@ end
 function checkLineList(lines,fluidList)
     # go through our list of lines and compare with our reference lists
     # return the line items that are not found
-    errorList = DataFrame(message = String[], entry=Int64[], Segment=String[], NPS=Float64[], SCHED=String[], material=String[], fluidName=String[])
+    errorList = DataFrame(message = String[], entry=Int64[], Segment=String[], NPS=Float64[], Schedule=String[], material=String[], fluidName=String[])
     for i = 1:(size(lines)[1])
         # NPS
         thisItem = lines[i,:NPS]
